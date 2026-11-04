@@ -1,0 +1,13 @@
+
+# Arquivos do Windows
+Thumbs.db
+desktop.ini
+
+# Arquivos do macOS
+.DS_Store
+
+# Configurações do VS Code
+.vscode/
+
+# Dependências locais
+node_modules/
