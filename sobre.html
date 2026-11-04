@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre | Digital Pulse</title>
+    <meta name="description" content="Conheça os modelos remoto, híbrido e presencial e como influenciam a vida profissional.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'inter', sans-serif;
+        }
+        .secao-sobre {
+            width: 100%;
+            max-width: 1200px;
+            min-height: 80vh;
+            margin: 0 auto;
+            padding: 100px 30px 70px;
+        }
+
+  .titulo-sobre {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    color: #12213d;
+    max-width: 800px;
+    margin-bottom: 24px;
+}
+        .titulo-sobre span {
+            color: #ff704c;
+        }
+
+        .descricao-sobre {
+            max-width: 780px;
+            line-height: 1.8;
+            color: #65728a;
+            margin-bottom: 40px;
+        }
+
+        .cards-sobre {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .card-sobre {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 22px;
+            box-shadow: 0 12px 30px rgba(16, 31, 56, 0.08);
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-sobre:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 35px rgba(16, 31, 56, 0.14);
+        }
+
+        .card-sobre h3 {
+            color: #12213d;
+            margin-bottom: 16px;
+        }
+
+        .card-sobre p {
+            color: #65728a;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 767px) {
+            .secao-sobre {
+                padding: 50px 20px;
+            }
+
+            .cards-sobre {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+   <header class="cabecalho">
+    <a href="index.html" class="logo">
+        digital<span>pulse</span>
+    </a>
+
+    <button class="menu-toggle" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menu-principal" aria-controls="menu-principal"
+            aria-expanded="false" aria-label="Abrir menu de navegação">
+        <i class="bi bi-list" aria-hidden="true"></i>
+    </button>
+    <nav id="menu-principal" class="menu collapse" aria-label="Navegação principal">
+        <a href="index.html#inicio">Início</a>
+        <a href="sobre.html" aria-current="page">Sobre</a>
+        <a href="index.html#dados">Dados</a>
+        <a href="index.html#explorar">Explorar</a>
+        <a href="index.html#ferramenta">Meu Perfil</a>
+        <a href="index.html#contato">Contato</a>
+    </nav>
+
+    <a href="index.html#explorar" class="botao-menu">
+        Comece agora →
+    </a>
+    <button type="button" class="tema-alternar" aria-label="Ativar modo escuro"
+            aria-pressed="false" title="Alternar entre modo claro e escuro">
+        <i class="bi bi-moon-stars" aria-hidden="true"></i>
+    </button>
+   </header>
+    <main id="conteudo">
+        <section id="sobre" class="secao-sobre">
+
+            <h1 class="titulo-sobre">
+                O futuro do trabalho <span>começa aqui.</span>
+            </h1>
+
+            <p class="descricao-sobre">A tecnologia está transformando o mercado de trabalho, criando novas possibilidades de atuação profissional. Os modelos remoto, híbrido e presencial oferecem diferentes formas de organização, flexibilidade e interação entre os profissionais.</p>
+
+            <div class="cards-sobre">
+
+                <article>
+                    <div class="card-sobre">
+                        <h3>Trabalho Remoto</h3>
+                        <p>O trabalho remoto permite que os profissionais realizem suas atividades fora do escritório, utilizando a internet e ferramentas digitais para se comunicar e colaborar.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="card-sobre">
+                        <h3>Trabalho Híbrido</h3>
+                        <p>O trabalho híbrido combina atividades presenciais e remotas, permitindo que os profissionais alternem entre o escritório e outros ambientes. Esse modelo busca unir flexibilidade, autonomia e colaboração entre as equipes.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="card-sobre">
+                        <h3>Trabalho Presencial</h3>
+                        <p>O trabalho presencial acontece nas instalações da empresa, proporcionando interação direta entre profissionais e equipes. Esse modelo favorece a convivência, a comunicação imediata e o desenvolvimento de relações no ambiente profissional.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
